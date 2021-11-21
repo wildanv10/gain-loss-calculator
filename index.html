@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1080, initial-scale=1.0">
+  <title>Gain/Loss Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="container">
+    <div id="calculator">
+      <div class="wrapper">
+        <h2 class="header">Gain/Loss Calculator</h2>
+        <div class="field">
+          <input type="text" name="current-value" placeholder="Current Value" autofocus oninput="onCurrentChange()">
+        </div>
+        <div class="field">
+          <input type="text" name="result-value" placeholder="Result Value" oninput="calculateByResult()">
+        </div>
+        <div class="field">
+          <input type="text" name="discount-value" placeholder="Gain/Loss (%)" oninput="calculateByPercent()">
+          <span class="prefix">%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>
